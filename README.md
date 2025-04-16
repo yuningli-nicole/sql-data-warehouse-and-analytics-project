@@ -1,10 +1,12 @@
 # Data Warehouse and Analytics Project
 
-Welcome to my Data Warehouse and Analytics Project repository! 🚀 In this project, I built a comprehensive solution for data warehousing and analytics, guiding you through building a data warehouse and uncovering actionable insights. I developed this project for my portfolio, showcasing my personal approach to industry best practices in data engineering and analytics.
+Welcome to my **Data Warehouse and Analytics Project** repository! 🚀 
+
+In this project, I built a comprehensive solution for data warehousing and analytics, guiding you through building a data warehouse and uncovering actionable insights. I developed this project for my portfolio, showcasing my personal approach to industry best practices in data engineering and analytics.
 
 --- 
 
-## Project Overview
+## 💡Project Overview
 
 ### Building the Data Warehouse
 
