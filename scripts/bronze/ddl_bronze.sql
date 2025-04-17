@@ -66,6 +66,13 @@ CREATE TABLE bronze.erp_loc_a101 (
 );
 GO
 
+-- Update the table to remove the weird trailing spaces after column cntry
+UPDATE bronze.erp_loc_a101
+SET cntry = REPLACE(REPLACE(REPLACE(cntry, CHAR(13), ''), CHAR(10), ''), ' ', '');
+GO
+
+	
+
 IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
     DROP TABLE bronze.erp_cust_az12;
 GO
@@ -76,6 +83,13 @@ CREATE TABLE bronze.erp_cust_az12 (
     gen    NVARCHAR(50)
 );
 GO
+
+-- Update the table to remove the weird trailing spaces after column gen
+UPDATE bronze.erp_cust_az12
+SET gen = REPLACE(REPLACE(REPLACE(gen, CHAR(13), ''), CHAR(10), ''), ' ', '');
+GO
+
+	
 
 IF OBJECT_ID('bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
     DROP TABLE bronze.erp_px_cat_g1v2;
@@ -88,3 +102,8 @@ CREATE TABLE bronze.erp_px_cat_g1v2 (
     maintenance  NVARCHAR(50)
 );
 GO
+
+-- Update the table to remove the weird trailing spaces after column maintenance
+UPDATE bronze.erp_px_cat_g1v2
+SET maintenance = REPLACE(REPLACE(REPLACE(maintenance, CHAR(13), ''), CHAR(10), ''), ' ', '');
+DO
