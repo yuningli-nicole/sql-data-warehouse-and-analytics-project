@@ -21,7 +21,6 @@ Usage Notes:
 -- crm_cust_info
 -- Check For Nulls or Duplicates in Primary Key
 -- Expectation: No Result
-
 SELECT cst_id, count(*)
 FROM silver.crm_cust_info
 GROUP BY cst_id
