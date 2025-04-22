@@ -12,8 +12,9 @@ SQL Functions Used:
 ===============================================================================
 */
 
--- Calculate the total sales per month 
--- and the running total of sales over time 
+-- Calculate the total sales per year 
+-- and the running total of sales over time, 
+-- as well as the moving averages of price over time
 SELECT
 	order_date,
 	total_sales,
@@ -28,4 +29,21 @@ FROM
     FROM gold.fact_sales
     WHERE order_date IS NOT NULL
     GROUP BY DATETRUNC(year, order_date)
+) t
+
+	
+-- Calculate the total sales per month 
+-- and the running total of sales over time of each year 	
+SELECT
+order_date,
+total_sales,
+SUM(total_sales) Over (PARTITION BY order_date ORDER BY order_date) AS running_total_sales
+FROM
+(
+SELECT
+DATETRUNC(month, order_date) AS order_date,
+SUM(sales_amount) AS total_sales
+FROM gold.fact_sales
+WHERE order_date IS NOT NULL
+GROUP BY datetrunc(month, order_date)
 ) t
