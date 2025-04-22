@@ -25,6 +25,7 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 ### BI: Analytics & Reporting (Data Analytics)
 
 #### Objective
+A curated collection of SQL scripts for data exploration, analytics, and reporting. This repository provides ready-to-use queries for analyzing databases, calculating key metrics, uncovering time-based trends, performing cumulative and segmentation analysis, and more. Each script is designed with best practices in mind to help data analysts and BI professionals efficiently explore and interpret relational data.
 Develop SQL-based analytics to deliver detailed insights into:
 - **Customer Behavior**
 - **Product Performance**
