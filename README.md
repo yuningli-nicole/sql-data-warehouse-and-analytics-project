@@ -4,6 +4,10 @@ Welcome to my **Data Warehouse and Analytics Project** repository! 🚀
 
 In this project, I built a comprehensive solution for data warehousing and analytics, guiding you through building a data warehouse and uncovering actionable insights. I developed this project for my portfolio, showcasing my personal approach to industry best practices in data engineering and analytics.
 
+The warehouse project includes the design and implementation of a data warehouse, the ETL process, and analytical queries for reporting. It showcases how to organize raw operational data into structured layers (bronze, silver, gold) to enable efficient analysis and insights. Ideal for data analysts, engineers, and anyone looking to understand end-to-end warehouse architecture using SQL Server.
+
+The analytics project includes a curated collection of SQL scripts for data exploration, analytics, and reporting. This repository provides ready-to-use queries for analyzing databases, calculating key metrics, uncovering time-based trends, performing cumulative and segmentation analysis, and more. Each script is designed with best practices in mind to help data analysts and BI professionals efficiently explore and interpret relational data.
+
 --- 
 
 ## 💡Project Overview
@@ -25,7 +29,6 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 ### BI: Analytics & Reporting (Data Analytics)
 
 #### Objective
-A curated collection of SQL scripts for data exploration, analytics, and reporting. This repository provides ready-to-use queries for analyzing databases, calculating key metrics, uncovering time-based trends, performing cumulative and segmentation analysis, and more. Each script is designed with best practices in mind to help data analysts and BI professionals efficiently explore and interpret relational data.
 Develop SQL-based analytics to deliver detailed insights into:
 - **Customer Behavior**
 - **Product Performance**
